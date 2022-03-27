@@ -10,12 +10,12 @@ def main(s1,s2,s3):
     """
     a=''
     if len(s1)%2==1:
-        a+=s1+', '
+        a=a+s1+','
     if len(s2)%2==1:
-        a+=s2+', '
+        a=a+s2+','
     if len(s3)%2==1:
-        a+=s3+', '
+        a=a+s3+','
     if a=='':
         return "[]"
     else:
-        return str('['+a+'\b\b]')
+        return "["+a+"\b]"
