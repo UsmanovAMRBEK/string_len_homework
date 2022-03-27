@@ -8,22 +8,14 @@ def main(s1,s2,s3):
     Returns:
         string
     """
-    # a=''
-    # if len(s1)%2==1:
-    #     a+=s1+', '
-    # if len(s2)%2==1:
-    #     a+=s2+', '
-    # if len(s3)%2==1:
-    #     a+=s3+', '
-    # if a=='':
-    #     return "[]"
-    # else:
-    #     return str('['+a+'\b'+'\b]')
-    a=[]
+    a=''
     if len(s1)%2==1:
-        a.append(s1)
+        a+=s1+', '
     if len(s2)%2==1:
-        a.append(s2)
+        a+=s2+', '
     if len(s3)%2==1:
-        a.append(s3)
-    return str(a)
+        a+=s3+', '
+    if a=='':
+        return "[]"
+    else:
+        return str('['+a+'\b\b]')
