@@ -18,6 +18,6 @@ def main(s1,s2,s3):
     if a=='':
         return "[]"
     else:
-        return '['+a+'\b\b]'
+        return '['+a+'\b'+'\b]'
 
         
