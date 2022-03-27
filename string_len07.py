@@ -8,6 +8,8 @@ def main(s1,s2,s3):
     Returns:
         string
     """
+    if len(s1) % 2 == 0 and len(s2) % 2 == 0 and len(s3) % 2 == 0:
+        return "[]"
     a='['
     if len(s1)%2==1:
         a+=s1+', '
@@ -15,8 +17,5 @@ def main(s1,s2,s3):
         a+=s2+', '
     if len(s3)%2==1:
         a+=s3+', '
-    
-    if a=="":
-        return "[]"
-    else:
-        return a+'\b\b]'
+    return a+'\b\b]'
+        
